@@ -2,6 +2,7 @@
 
 static
 static/*
+static/admin
 *.pyc
 realestate/local_settings.py
 media
