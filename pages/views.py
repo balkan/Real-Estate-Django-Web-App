@@ -14,6 +14,9 @@ def index(request):
         'bedroom_choices': bedroom_choices,
         'price_choices': price_choices,
         'search_enabled': False,
+        'show_garage': False,
+        'show_bathrooms': False,
+        'show_realtor': False,
     }
 
     return render(request, 'pages/index.html', context)
