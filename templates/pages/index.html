@@ -1,4 +1,4 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
 
 {% load humanize %}
 
@@ -6,8 +6,11 @@
 
 {% block content %}
 <!-- Showcase -->
+{% if search_enabled == True %}
 <section id="showcase">
     <div class="container text-center">
+
+
       <div class="home-search p-5">
         <div class="overlay p-5">
           <h1 class="display-4 mb-4">
@@ -66,6 +69,9 @@
       </div>
     </div>
   </section>
+
+{% endif %}
+
 <br>
   <!-- Alerts -->
   {% include 'partials/_alerts.html' %}
