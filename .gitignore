@@ -1,8 +1,10 @@
 
 
-static
-static/*
-static/admin
+*/*.DS_Store
+.DS_Store
+#static
+#static/*
+#static/admin
 *.pyc
 realestate/local_settings.py
 media
