@@ -9,8 +9,8 @@
     <div class="container">
       <div class="row text-center">
         <div class="col-md-12">
-          <h1 class="display-4">About Real Estate</h1>
-          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
+          <h1 class="display-4">Didim'de Gayrimenkul Danışmanlık Hizmetleri</h1>
+          <p class="lead">Arsa, daire, dubleks, villa ilanları, inşaat hizmetleri için bize ulaşabilirsiniz</p>
         </div>
       </div>
     </div>
@@ -23,9 +23,9 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
             <a href="{% url 'index' %}">
-              <i class="fas fa-home"></i> Home</a>
+              <i class="fas fa-home"></i> Anasayfa</a>
           </li>
-          <li class="breadcrumb-item active"> About</li>
+          <li class="breadcrumb-item active"> Hakkımızda</li>
         </ol>
       </nav>
     </div>
@@ -35,12 +35,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <h2>We Search For The Perfect Home</h2>
-          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
+          <h2>Sizin için en uygun evi buluyoruz</h2>
+          <p class="lead">Bize gelin ve sizin için en uygun evi bulalım</p>
           <img src="{% static 'img/about.jpg' %}" alt="">
-          <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse officia repudiandae ad saepe ex, amet
-            neque quod accusamus rem quia magnam magni dolorum facilis ullam minima perferendis? Exercitationem at quaerat
-            commodi id libero eveniet harum perferendis laborum molestias quia.</p>
+          <p class="mt-4">Müşteri memnuniyetini kendine benimsemis, uzun yıllardan beri ihtiyaclariniza cevap veren
+            didimdeki danısmanınız.</p>
         </div>
         <div class="col-md-4">
           {% if mvp_realtors %}
@@ -48,7 +47,7 @@
             <div class="card">
                 <img class="card-img-top" src="{{ realtor.photo.url }}" alt="Seller of the month">
                 <div class="card-body">
-                  <h5 class="card-title">Seller Of The Month</h5>
+                  <h5 class="card-title">Erdal Kulaç</h5>
                   <h6 class="text-secondary">{{ realtor.name }}</h6>
                   <p class="card-text">{{ realtor.description }}
                   </p>
@@ -64,7 +63,8 @@
   <!-- Work -->
   <section id="work" class="bg-dark text-white text-center">
     <h2 class="display-4">Sizin Icin Buradayiz</h2>
-    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit aperiam, unde aliquid at similique!</h4>
+    <h4>Müşteri memnuniyetini kendine benimsemis, uzun yıllardan beri ihtiyaclariniza cevap veren
+      didimdeki danısmanınız</h4>
     <hr>
     <a href="{% url 'listings' %}" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a>
   </section>
@@ -90,7 +90,7 @@
           {% endfor %}
         {% else %}
           <div class="col-md-12">
-            <p>No Realtors Available</p>
+            <p>.</p>
           </div>
         {% endif %}
       </div>
