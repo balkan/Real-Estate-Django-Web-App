@@ -17,6 +17,7 @@ def index(request):
         'show_garage': False,
         'show_bathrooms': False,
         'show_realtor': False,
+        'show_featured': False,
     }
 
     return render(request, 'pages/index.html', context)

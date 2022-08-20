@@ -17,7 +17,7 @@
               class="nav-item mr-3"
             {% endif %}
           >
-            <a class="nav-link" href="{% url 'index' %}">Home</a>
+            <a class="nav-link" href="{% url 'index' %}">Anasayfa</a>
           </li>
           <li
             {% if 'about' in request.path %}
@@ -26,8 +26,9 @@
               class="nav-item mr-3"
             {% endif %}
           >
-            <a class="nav-link" href="{% url 'about' %}">About</a>
+            <a class="nav-link" href="{% url 'about' %}">Hakkımızda</a>
           </li>
+          {% if show_featured == true %}
           <li
             {% if 'listings' in request.path %}
               class="nav-item active mr-3"
@@ -35,8 +36,9 @@
               class="nav-item mr-3"
             {% endif %}
           >
-            <a class="nav-link" href="{% url 'listings' %}">Featured Listings</a>
+            <a class="nav-link" href="{% url 'listings' %}">Ozel Ilanlar</a>
           </li>
+          {% endif %}
         </ul>
 
         <ul class="navbar-nav ml-auto">
@@ -69,7 +71,7 @@
             {% endif %}
             >
               <a class="nav-link" href="{% url 'register' %}">
-                <i class="fas fa-user-plus"></i> Register</a>
+                <i class="fas fa-user-plus"></i> Kayit</a>
             </li>
             <li
             {% if 'login' in request.path %}
@@ -81,7 +83,7 @@
               <a class="nav-link" href="{% url 'login' %}">
                 <i class="fas fa-sign-in-alt"></i>
 
-                Login</a>
+                Giris</a>
             </li>
           {% endif %}
         </ul>
