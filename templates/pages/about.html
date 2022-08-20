@@ -66,13 +66,15 @@
     <h4>Müşteri memnuniyetini kendine benimsemis, uzun yıllardan beri ihtiyaclariniza cevap veren
       didimdeki danısmanınız</h4>
     <hr>
+    {% if false %}
     <a href="{% url 'listings' %}" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a>
+    {% endif %}
   </section>
 
   <!-- Team -->
   <section id="team" class="py-5">
     <div class="container">
-      <h2 class="text-center">Our Team</h2>
+      <h2 class="text-center">Ekibimiz</h2>
       <div class="row text-center">
         {% if realtors %}
           {% for realtor in realtors %}
